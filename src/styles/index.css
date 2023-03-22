@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     li {
         @apply p-4
@@ -12,4 +13,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #D92323;
+}
+
+@font-face {
+    font-family: p5menu;
+    src: url(/public/fonts/p5menu.ttf);
+}
+.p5menu {
+    font-family: p5menu;
+}
+
+@font-face {
+    font-family: p5regular;
+    src: url(/public/fonts/p5regular.otf);
+}
+.p5regular {
+    font-family: p5regular;
 }
