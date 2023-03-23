@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar.js";
 import Hero from "./components/Hero.js";
 import About from "./components/About.js";
-import Projects from "./components/Projects.js";
-import Footer from "./components/Footer.js";
 import Skills from "./components/Skills.js";
+import Projects from "./components/Projects.js";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Footer />
+      <Contact />
     </>
   );
 }
