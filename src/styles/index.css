@@ -30,3 +30,11 @@ body {
 .p5regular {
     font-family: p5regular;
 }
+
+@font-face {
+    font-family: p5older;
+    src: url(/public/fonts/p5older.ttf);
+}
+.p5older {
+    font-family: p5older;
+}

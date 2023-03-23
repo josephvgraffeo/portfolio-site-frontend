@@ -1,5 +1,7 @@
 import { useState } from "react"
-import { MenuIcon, XIcon } from "@heroicons/react/outline"
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 export default function Navbar() {
     const [nav, setNav] = useState(false);
@@ -11,26 +13,50 @@ export default function Navbar() {
                 <div className="flex items-center">
                     <h1 className="p5menu text-white text-[40px] m-4">JG DEV</h1>
                     <ul className="hidden md:flex">
-                        <li className="p5menu text-white text-[20px]">Home</li>
-                        <li className="p5menu text-white text-[20px]">About</li>
-                        <li className="p5menu text-white text-[20px]">Projects</li>
+                        <li className="p5menu text-white text-[21px] rounded-lg cursor-pointer hover:bg-[#D92323] transform transition-all duration-300 hover:scale-105">Home</li>
+                        <li className="p5menu text-white text-[21px] rounded-lg cursor-pointer hover:bg-[#D92323] transform transition-all duration-300 hover:scale-105">About</li>
+                        <li className="p5menu text-white text-[21px] rounded-lg cursor-pointer hover:bg-[#D92323] transform transition-all duration-300 hover:scale-105">Projects</li>
                     </ul>
                 </div>
                 <div className="hidden md:flex pr-4">
-                    <button className="p5menu text-[30px] text-white bg-cover rounded-lg px-6 py-2 bg-center">Contact</button>
+                    <button className="p5menu text-[28px] text-white bg-cover rounded-lg px-6 py-2 bg-center hover:bg-[#D92323] transform transition-all duration-300 hover:scale-105">Contact</button>
                 </div>
                 <div className="md:hidden" onClick={handleClick}>
-                    {!nav ? <MenuIcon className="text-white w-8 m-4" /> : <XIcon className="text-white w-8 m-4" />}
+                    {!nav ? <FaBars className="text-white w-8 m-4" /> : <FaTimes className="text-white w-8 m-4" />}
                 </div>
             </div>
             <ul className={!nav ? "hidden" : "absolute bg-[#0d0d0d] w-full px-8 flex flex-col justify-center items-center"}>
-                <li className="p5menu text-[25px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center">About</li>
-                <li className="p5menu text-[25px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center">Projects</li>
-                <li className="p5menu text-[25px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center">Home</li>
+                <li className="p5menu text-[27px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>About</li>
+                <li className="p5menu text-[27px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>Projects</li>
+                <li className="p5menu text-[27px] text-white bg-[#D92323] w-[70%] m-3 rounded-lg flex justify-center bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>Home</li>
                 <div className="mb-4 flex flex-col justify-center items-center">
                     <button className="p5menu text-white bg-cover rounded-lg px-8 py-3 bg-center" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/button-bg.webp')" }}>Contact</button>
                 </div>
             </ul>
+            <div className="hidden lg:flex fixed flex-col top-[320%] left-0">
+                <ul>
+                    <li className="p5menu w-[160px] h-[65px] flex justify-between items-center ml-[-100px] text-white hover:ml-[-10px] duration-300 bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>
+                        <a className="flex justify-between items-center w-full" href="/">
+                            LinkedIn <FaLinkedin size={30}/>
+                        </a>
+                    </li>
+                    <li className="p5menu w-[160px] h-[65px] flex justify-between items-center ml-[-100px] text-white hover:ml-[-10px] duration-300 bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>
+                        <a className="flex justify-between items-center w-full" href="/">
+                            Github <FaGithub size={30}/>
+                        </a>
+                    </li>
+                    <li className="p5menu w-[160px] h-[65px] flex justify-between items-center ml-[-100px] text-white hover:ml-[-10px] duration-300 bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>
+                        <a className="flex justify-between items-center w-full" href="/">
+                            Email <HiOutlineMail size={30}/>
+                        </a>
+                    </li>
+                    <li className="p5menu w-[160px] h-[65px] flex justify-between items-center ml-[-100px] text-white hover:ml-[-10px] duration-300 bg-cover" style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/portfolio-button-bg-sm.webp')" }}>
+                        <a className="flex justify-between items-center w-full" href="/">
+                            Resume <BsFillPersonLinesFill size={30}/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }
