@@ -3,12 +3,12 @@ export default function Projects() {
         <div name="projects" className="w-full md:h-screen text-white my-[12rem]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
-                <img className="h-[90px] inline border-b-4 border-black mx-2" src="https://portfolio-site-assets-jg.s3.amazonaws.com/projects-text-nobg.png" alt="about" />
-                    <p className="pt-6 pv-4 text-[22px]">Check out some of my past projects</p>
+                <img className="h-[90px] inline border-b-4 border-black mx-2 transform transition-all duration-300 hover:scale-110" src="https://portfolio-site-assets-jg.s3.amazonaws.com/projects-text-nobg.png" alt="about" />
+                    <p className="pt-6 pv-4 text-[22px] transform transition-all duration-300 hover:scale-105">Check out some of my past projects</p>
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div"
+                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div transform transition-all duration-500 hover:scale-105"
                     style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/cert-gamer-preview.webp')" }}>
                         <div className="opacity-0 group-hover:opacity-100">
                             <span className="text-2xl font-bold ml-[30px] text-white tracking-wider">
@@ -34,7 +34,7 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div"
+                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div transform transition-all duration-500 hover:scale-105"
                     style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/tic-tac-preview.webp')" }}>
                         <div className="opacity-0 group-hover:opacity-100">
                             <span className="text-2xl font-bold text-white tracking-wider">
@@ -55,7 +55,7 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div"
+                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div transform transition-all duration-500 hover:scale-105"
                     style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/nfav-preview.webp')" }}>
                         <div className="opacity-0 group-hover:opacity-100">
                             <span className="text-2xl font-bold text-white tracking-wider">
@@ -76,7 +76,7 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div"
+                    <div className="shadow-lg shadow-[#000000] group container rounded-md flex justify-center items-center mx-auto content-div transform transition-all duration-500 hover:scale-105"
                     style={{ backgroundImage: "url('https://portfolio-site-assets-jg.s3.amazonaws.com/hex-color-preview.webp')" }}>
                         <div className="opacity-0 group-hover:opacity-100">
                             <span className="text-2xl font-bold text-white tracking-wider">
