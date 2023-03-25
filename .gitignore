@@ -3,6 +3,8 @@
 Contact.js
 .firebaserc
 firebase.json
+assets
+music
 
 # dependencies
 /node_modules
