@@ -3,7 +3,7 @@ export default function Skills() {
         <div name="skills" className="text-white w-full h-screen">
             <div className="max-w-[1000px] mt-[150px] sm:mt-auto mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
-                    <img className="h-[90px] inline border-b-4 border-black mx-2 transform transition-all duration-300 hover:scale-110" src="https://portfolio-site-assets-jg.s3.amazonaws.com/skills-text-nobg.png" alt="about" />
+                    <img className="w-[210px] sm:w-[270px] inline border-b-4 border-black mx-2 transform transition-all duration-300 hover:scale-110" src="https://portfolio-site-assets-jg.s3.amazonaws.com/skills-text-nobg.png" alt="about" />
                     <p className="pt-4 pb-2 text-[22px] transform transition-all duration-300 hover:scale-105">These are the technologies I have worked with</p>
                 </div>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-6">

@@ -3,7 +3,7 @@ export default function Projects() {
         <div name="projects" className="w-full md:h-screen text-white my-[12rem]">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
-                <img className="h-[90px] inline border-b-4 border-black mx-2 transform transition-all duration-300 hover:scale-110" src="https://portfolio-site-assets-jg.s3.amazonaws.com/projects-text-nobg.png" alt="about" />
+                <img className="w-[240px] sm:w-[400px] inline border-b-4 border-black mx-2 transform transition-all duration-300 hover:scale-110" src="https://portfolio-site-assets-jg.s3.amazonaws.com/projects-text-nobg.png" alt="about" />
                     <p className="pt-6 pv-4 text-[22px] transform transition-all duration-300 hover:scale-105">Check out some of my past projects</p>
                 </div>
 
